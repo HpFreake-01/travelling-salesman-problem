@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Travelling salesman problem</title>
+
+	<style>
+		#map{
+			position: relative;
+			width: 100%;
+			min-width: 1000px; 
+			height: 100%;
+			min-height: 700px;
+			border: 2px solid #52357f;
+			-webkit-background-size: 100%;
+			background-size: 100%;
+		}
+		.mx-point{
+			position: absolute;
+			width: 15px;
+			height: 15px;
+			margin-left: -8px;
+			margin-top: -8px;
+			border: 1px solid #333;
+			background: #ddd;
+			border-radius: 50%;
+			-moz-border-radius: 50%;
+		}
+		#count{
+			padding: 4px 10px;
+			display: block;
+			width: 160px;
+			margin: 10px auto;
+		}
+		.mx-info{
+			text-align: center;
+		}
+		.mx_order_number{
+			position: absolute;
+		    margin-top: -25px;
+		    min-width: 50px;
+		    text-align: center;
+		    left: 50%;
+		    margin-left: -25px;
+		    font-size: 14px;
+		    z-index: 8;
+		}
+		.mx_order_number span{
+			background: #fff;
+		}
+		.mx-distance{
+			position: absolute;
+		    font-size: 12px;
+		    min-width: 100px;
+		    top: 18px;
+		    background: #fff;
+		    margin-left: -26px;
+		    display: none;
+		    text-align: center;
+		    z-index: 8;
+		}
+		.mx-point:hover .mx-distance{
+			display: block;
+		}
+	</style>
+</head>
+<body>
+
+	<div>
+		<button id="count" disabled="disabled">
+			Take a count
+		</button>
+
+	</div>
+
+	<div id="map"></div>
+
+	<script src="./build/script.js"></script>
+	
+</body>
+</html>
